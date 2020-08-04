@@ -84,7 +84,7 @@
       <!-- Begin: Content -->
       <section id="content" class="animated fadeIn">
     
-
+        Ini isinya
       </section>
       <!-- End: Content -->
 

@@ -46,12 +46,14 @@
     <li 
     <?php
         $uri = $_SERVER['REQUEST_URI'];
+        $word = "tracer";
         
-        if($uri == "/user/tracer" || $uri == "/user/tracer/"){
+        if(strpos($uri, $word) !== false){
             echo ("class='active'");
         }
-        ?>
-    >
+
+        echo $uri;
+        ?>>
       <a href=<?php echo base_url('user/tracer')?>>
         <span class="fa fa-calendar"></span>
         <span class="sidebar-title">Tracer Study</span>

@@ -16,6 +16,6 @@ class User extends Controller
     {
         $model = new User_model();
         $data['user'] = $model->getUser();
-        echo view('user_view',$data);
+        echo view('tracer',$data);
     }
 }
