@@ -114,25 +114,75 @@
                     <div class="row">
                       <div>
                         <div class="section">
-                            <h4>Masukkan nama anda :</h4>
+                            <h4>Pertanyaan 1 :</h4>
                           <label class="field">
-                            <input type="text" name="from" id="from" class="gui-input" placeholder="Masukkan nama disini">
+                            <input type="text" name="from" id="from" class="gui-input" placeholder="Jawab disini">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div>
+                        <div class="section">
+                            <h4>Pertanyaan 2:</h4>
+                          <label class="field">
+                            <input type="text" name="from" id="from" class="gui-input" placeholder="Jawab disini">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div>
+                        <div class="section">
+                            <h4>Pertanyaan 3 :</h4>
+                          <label class="field">
+                            <input type="text" name="from" id="from" class="gui-input" placeholder="jawab disini">
                           </label>
                         </div>
                       </div>
                     </div>
 
                     <!-- Multi Selects -->
-                    <div class="row">
+                <div class="row">
+                    <div>
                         <div class="section">
+                        <h4>Dropdown 1:</h4>
                           <label class="field select">
                             <select id="country" name="country">
-                              <option value="">Contoh multi select</option>
-                              <option value="AL">Albania</option>
-                              <option value="DZ">Algeria</option>
+                              <option value="">Dropdown 1</option>
+                              <option value="AL">Pilihan 1</option>
+                              <option value="DZ">Pilihan 2</option>
                             </select>
                             <i class="arrow"></i>
                           </label>
+                          </div>
+
+                          <div class="section">
+                        <h4>Dropdown 2:</h4>
+                          <label class="field select">
+                            <select id="country" name="country">
+                              <option value="">Dropdown 2</option>
+                              <option value="AL">Pilihan 1</option>
+                              <option value="DZ">Pilihan 2</option>
+                            </select>
+                            <i class="arrow"></i>
+                          </label>
+                          </div>
+                      </div>
+
+                      <div class="section">
+                        <h4>Dropdown 3:</h4>
+                          <label class="field select">
+                            <select id="country" name="country">
+                              <option value="">Dropdown 2</option>
+                              <option value="AL">Pilihan 1</option>
+                              <option value="DZ">Pilihan 2</option>
+                            </select>
+                            <i class="arrow"></i>
+                          </label>
+                          </div>
                       </div>
                 
                     </form>
