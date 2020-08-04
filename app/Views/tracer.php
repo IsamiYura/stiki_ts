@@ -83,8 +83,61 @@
 
       <!-- Begin: Content -->
       <section id="content" class="animated fadeIn">
+
+      <div class="panel panel-primary">
+  <div class="panel-heading">
+    <span class="panel-title">Isi Data Tracer Study</span>
+    <div class="widget-menu pull-right">
+    </div>
+  </div>
+  <div class="panel-body">
+  <h3>Data Pengisi</h3>
+  <hr class="alt short">
+  <!-- Isi data user yang login -->
+    <ul class=>Nama : <?php echo('Nataniel David T')?></ul>
+    <ul class=>NRP : <?php echo('171111029')?></ul>
+    <ul class=>Tahun Lulus : <?php echo('2021')?></ul>
+  </div>
+</div>
     
-        Ini isinya
+      <div class="admin-form">
+
+        <div class="panel heading-border">
+            <div class="panel-body bg-light">
+            <form method="post" action="" id="form-ui">
+                    <div class="section-divider mb40" id="spy1">
+                      <span>Form Tracer Study</span>
+                    </div>
+                    <!-- .section-divider -->
+                            
+                    <!-- Basic Inputs -->
+                    <div class="row">
+                      <div>
+                        <div class="section">
+                            <h4>Masukkan nama anda :</h4>
+                          <label class="field">
+                            <input type="text" name="from" id="from" class="gui-input" placeholder="Masukkan nama disini">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Multi Selects -->
+                    <div class="row">
+                        <div class="section">
+                          <label class="field select">
+                            <select id="country" name="country">
+                              <option value="">Contoh multi select</option>
+                              <option value="AL">Albania</option>
+                              <option value="DZ">Algeria</option>
+                            </select>
+                            <i class="arrow"></i>
+                          </label>
+                      </div>
+                
+                    </form>
+            </div>
+        </div>
       </section>
       <!-- End: Content -->
 
