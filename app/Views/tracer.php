@@ -1,10 +1,10 @@
-<?= $this->include('layout/header_page') ?>
+<?=$this->include('layout/header_page')?>
 
 <body class="dashboard-page sb-l-o sb-r-c">
 
-<!-------------------------------------------------------------+ 
-  <body> Helper Classes: 
----------------------------------------------------------------+ 
+    <!-------------------------------------------------------------+
+  <body> Helper Classes:
+---------------------------------------------------------------+
   '.sb-l-o' - Sets Left Sidebar to "open"
   '.sb-l-m' - Sets Left Sidebar to "minified"
   '.sb-l-c' - Sets Left Sidebar to "closed"
@@ -16,338 +16,234 @@
  Results: Sidebar left Open, Sidebar right Closed
 --------------------------------------------------------------->
 
-    
-  <!-- Start: Main -->
-  <div id="main">
 
-    <!-----------------------------------------------------------------+ 
-       ".navbar" Helper Classes: 
-    -------------------------------------------------------------------+ 
-       * Positioning Classes: 
+    <!-- Start: Main -->
+    <div id="main">
+
+        <!-----------------------------------------------------------------+
+       ".navbar" Helper Classes:
+    -------------------------------------------------------------------+
+       * Positioning Classes:
         '.navbar-static-top' - Static top positioned navbar
         '.navbar-static-top' - Fixed top positioned navbar
 
        * Available Skin Classes:
-         .bg-dark    .bg-primary   .bg-success   
+         .bg-dark    .bg-primary   .bg-success
          .bg-info    .bg-warning   .bg-danger
-         .bg-alert   .bg-system 
+         .bg-alert   .bg-system
     -------------------------------------------------------------------+
       Example: <header class="navbar navbar-fixed-top bg-primary">
-      Results: Fixed top navbar with blue background 
+      Results: Fixed top navbar with blue background
     ------------------------------------------------------------------->
-    <?= $this->include('layout/navbar_top') ?>
-    
-    <!-----------------------------------------------------------------+ 
-       "#sidebar_left" Helper Classes: 
-    -------------------------------------------------------------------+ 
-       * Positioning Classes: 
-        '.affix' - Sets Sidebar Left to the fixed position 
+        <?=$this->include('layout/navbar_top')?>
+
+        <!-----------------------------------------------------------------+
+       "#sidebar_left" Helper Classes:
+    -------------------------------------------------------------------+
+       * Positioning Classes:
+        '.affix' - Sets Sidebar Left to the fixed position
 
        * Available Skin Classes:
          .sidebar-dark (default no class needed)
-         .sidebar-light  
-         .sidebar-light.light   
+         .sidebar-light
+         .sidebar-light.light
     -------------------------------------------------------------------+
        Example: <aside id="sidebar_left" class="affix sidebar-light">
        Results: Fixed Left Sidebar with light/white background
     ------------------------------------------------------------------->
 
-    <!-- Start: Sidebar Left -->
-    
-      <!-- End: Sidebar Left Content -->
+        <!-- Start: Sidebar Left -->
 
-    </aside>
-    <!-- End: Sidebar Left -->
-    <?= $this->include('layout/navbar_left') ?>
-    <!-- Start: Content-Wrapper -->
-    <section id="content_wrapper">
+        <!-- End: Sidebar Left Content -->
 
-      <!-- Start: Topbar -->
-      <header id="topbar">
-        <div class="topbar-left">
-          <ol class="breadcrumb">
-            <li class="crumb-active">
-              <a href="dashboard.html">Dashboard</a>
-            </li>
-            <li class="crumb-icon">
-              <a href="dashboard.html">
-                <span class="glyphicon glyphicon-home"></span>
-              </a>
-            </li>
-            <li class="crumb-trail">Dashboard</li>
-          </ol>
-        </div>
-        
-      </header>
-      <!-- End: Topbar -->
+        </aside>
+        <!-- End: Sidebar Left -->
+        <?=$this->include('layout/navbar_left')?>
+        <!-- Start: Content-Wrapper -->
+        <section id="content_wrapper">
 
-      <!-- Begin: Content -->
-      <section id="content" class="animated fadeIn">
+            <!-- Start: Topbar -->
+            <header id="topbar">
+                <div class="topbar-left">
+                    <ol class="breadcrumb">
+                        <li class="crumb-active">
+                            <a href="/user">Dashboard</a>
+                        </li>
+                        <li class="crumb-icon">
+                            <a href="/user">
+                                <span class="glyphicon glyphicon-home"></span>
+                            </a>
+                        </li>
+                        <li class="crumb-trail">Tracer</li>
+                    </ol>
+                </div>
 
-      <div class="panel panel-primary">
-  <div class="panel-heading">
-    <span class="panel-title">Isi Data Tracer Study</span>
-    <div class="widget-menu pull-right">
+            </header>
+            <!-- End: Topbar -->
+
+            <!-- Begin: Content -->
+            <section id="content" class="animated fadeIn">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <span class="panel-title">Isi Data Tracer Study</span>
+                        <div class="widget-menu pull-right">
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <h3>Data Pengisi Tracer Study</h3>
+                        <hr class="alt short">
+                        <!-- Isi data user yang login -->
+                        <div class="col-md-3">
+                            <ul>Nama</ul>
+                            <ul>NRP</ul>
+                            <ul>Prodi</ul>
+                            <ul>No.Telp</ul>
+                            <ul>Email</ul>
+                            <ul>Tahun Lulus</ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <!--- gunakan perulangan --->
+                            <ul>: <?php echo ("Nama mahasiswa") ?></ul>
+                            <ul>: <?php echo ("NRP mahasiswa") ?></ul>
+                            <ul>: <?php echo ("Prodi mahasiswa") ?></ul>
+                            <ul>: <?php echo ("Telepon mahasiswa") ?></ul>
+                            <ul>: <?php echo ("Email mahasiswa") ?></ul>
+                            <ul>: <?php echo ("Tahun lulus mahasiswa") ?></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <?=$this->include('section1')?>
+                <?=$this->include('section2')?>
+
     </div>
-  </div>
-  <div class="panel-body">
-  <h3>Data Pengisi</h3>
-  <hr class="alt short">
-  <!-- Isi data user yang login -->
-    <ul class=>Nama : <?php echo('Nataniel David T')?></ul>
-    <ul class=>NRP : <?php echo('171111029')?></ul>
-    <ul class=>Tahun Lulus : <?php echo('2021')?></ul>
-  </div>
-</div>
-    
-      <div class="admin-form">
 
-        <div class="panel heading-border">
-            <div class="panel-body bg-light">
-            <form method="post" action="" id="form-ui">
-                    <div class="section-divider mb40" id="spy1">
-                      <span>Form Tracer Study</span>
-                    </div>
-                    <!-- .section-divider -->
-                            
-                    <!-- Basic Inputs -->
-                    <div class="row">
-                      <div>
-                        <div class="section">
-                            <h4>Pertanyaan 1 :</h4>
-                          <label class="field">
-                            <input type="text" name="from" id="from" class="gui-input" placeholder="Jawab disini">
-                          </label>
-                        </div>
-                      </div>
-                    </div>
 
-                    <div class="row">
-                      <div>
-                        <div class="section">
-                            <h4>Pertanyaan 2:</h4>
-                          <label class="field">
-                            <input type="text" name="from" id="from" class="gui-input" placeholder="Jawab disini">
-                          </label>
-                        </div>
-                      </div>
-                    </div>
 
-                    <div class="row">
-                      <div>
-                        <div class="section">
-                            <h4>Pertanyaan 3 :</h4>
-                          <label class="field">
-                            <input type="text" name="from" id="from" class="gui-input" placeholder="jawab disini">
-                          </label>
-                        </div>
-                      </div>
-                    </div>
+    </section>
 
-                    <!-- Multi Selects -->
-                <div class="row">
-                    <div>
-                        <div class="section">
-                        <h4>Dropdown 1:</h4>
-                          <label class="field select">
-                            <select id="country" name="country">
-                              <option value="">Dropdown 1</option>
-                              <option value="AL">Pilihan 1</option>
-                              <option value="DZ">Pilihan 2</option>
-                            </select>
-                            <i class="arrow"></i>
-                          </label>
-                          </div>
 
-                          <div class="section">
-                        <h4>Dropdown 2:</h4>
-                          <label class="field select">
-                            <select id="country" name="country">
-                              <option value="">Dropdown 2</option>
-                              <option value="AL">Pilihan 1</option>
-                              <option value="DZ">Pilihan 2</option>
-                            </select>
-                            <i class="arrow"></i>
-                          </label>
-                          </div>
-                      </div>
 
-                      <div class="section">
-                        <h4>Dropdown 3:</h4>
-                          <label class="field select">
-                            <select id="country" name="country">
-                              <option value="">Dropdown 2</option>
-                              <option value="AL">Pilihan 1</option>
-                              <option value="DZ">Pilihan 2</option>
-                            </select>
-                            <i class="arrow"></i>
-                          </label>
-                          </div>
-                      </div>
-                
-                    </form>
-            </div>
-        </div>
-      </section>
-      <!-- End: Content -->
 
-    
+    <!-- End: Content -->
+
+
     </section>
     <!-- End: Content-Wrapper -->
-  </div>
-  <!-- End: Main -->
+    </div>
 
-  <!-- BEGIN: PAGE SCRIPTS -->
+    <!-- End: Main -->
 
-  <!-- jQuery -->
-  <script src=<?php echo base_url("vendor/jquery/jquery-1.11.1.min.js")?>></script>
+    <!-- BEGIN: PAGE SCRIPTS -->
 
-  <script src=<?php echo base_url("vendor/jquery/jquery_ui/jquery-ui.min.js")?>></script>
+    <!-- jQuery -->
+    <script src=<?php echo base_url("vendor/jquery/jquery-1.11.1.min.js") ?>></script>
 
-  <!-- Theme Javascript -->
-  <script src=<?php echo base_url("assets/js/utility/utility.js")?>></script>
-  <script src=<?php echo base_url("assets/js/demo/demo.js")?>></script>
-  <script src=<?php echo base_url("assets/js/main.js")?>></script>
+    <script src=<?php echo base_url("vendor/jquery/jquery_ui/jquery-ui.min.js") ?>></script>
 
-  <!-- Widget Javascript -->
-  <script src=<?php echo base_url("assets/js/demo/widgets.js")?>></script>
-  <script type="text/javascript">
-  jQuery(document).ready(function() {
+    <!-- Theme Javascript -->
+    <script src=<?php echo base_url("assets/js/utility/utility.js") ?>></script>
+    <script src=<?php echo base_url("assets/js/demo/demo.js") ?>></script>
+    <script src=<?php echo base_url("assets/js/main.js") ?>></script>
 
-    "use strict";
+    <!-- Widget Javascript -->
+    <script src=<?php echo base_url("assets/js/demo/widgets.js") ?>></script>
 
-    // Init Theme Core      
-    Core.init();
+    <script type="text/javascript">
+    $section = 1;
 
-    // Init Demo JS
-    Demo.init();
-
-    // Init Widget Demo JS
-    // demoHighCharts.init();
-
-    // Because we are using Admin Panels we use the OnFinish 
-    // callback to activate the demoWidgets. It's smoother if
-    // we let the panels be moved and organized before 
-    // filling them with content from various plugins
-
-    // Init plugins used on this page
-    // HighCharts, JvectorMap, Admin Panels
-
-    // Init Admin Panels on widgets inside the ".admin-panels" container
-    $('.admin-panels').adminpanel({
-      grid: '.admin-grid',
-      draggable: true,
-      preserveGrid: true,
-      mobile: false,
-      onStart: function() {
-        // Do something before AdminPanels runs
-      },
-      onFinish: function() {
-        $('.admin-panels').addClass('animated fadeIn').removeClass('fade-onload');
-
-        // Init the rest of the plugins now that the panels
-        // have had a chance to be moved and organized.
-        // It's less taxing to organize empty panels
-        demoHighCharts.init();
-        runVectorMaps(); // function below
-      },
-      onSave: function() {
-        $(window).trigger('resize');
-      }
+    $(".confirm").click(function() {
+        alert(this.id);
+        alert($section);
     });
 
-    // Widget VectorMap
-    function runVectorMaps() {
+    $(".next").click(function() {
+        // alert("move next section");
+        $section++;
+        alert("Masuk section "+$section)
+        if ($section == 2) {
+            $(".admin-form.section2").removeClass("hidden");
+            $(".admin-form.section2").addClass("animated fadeIn");
+            $(".admin-form.section1").addClass("hidden")
+        } else if ($section == 3) {
+            $(".admin-form.section3").removeClass("hidden");
+            $(".admin-form.section3").addClass("animated fadeIn");
+            $(".admin-form.section2").addClass("hidden")
+        }
+    });
 
-      // Jvector Map Plugin
-      var runJvectorMap = function() {
-        // Data set
-        var mapData = [900, 700, 350, 500];
-        // Init Jvector Map
-        $('#WidgetMap').vectorMap({
-          map: 'us_lcc_en',
-          //regionsSelectable: true,
-          backgroundColor: 'transparent',
-          series: {
-            markers: [{
-              attribute: 'r',
-              scale: [3, 7],
-              values: mapData
-            }]
-          },
-          regionStyle: {
-            initial: {
-              fill: '#E5E5E5'
+    $(".prev").click(function() {
+        $section--;
+        alert("Masuk section "+$section)
+        if ($section == 2) {
+            $(".admin-form.section2").removeClass("hidden");
+            $(".admin-form.section2").addClass("animated fadeIn");
+            $(".admin-form.section3").addClass("hidden")
+        } else if ($section == 1) {
+            $(".admin-form.section1").removeClass("hidden");
+            $(".admin-form.section1").addClass("animated fadeIn");
+            $(".admin-form.section2").addClass("hidden")
+        }
+    });
+
+
+
+    jQuery(document).ready(function() {
+
+        "use strict";
+
+        // Init Theme Core
+        Core.init();
+
+        // Init Demo JS
+        Demo.init();
+
+        // Init Widget Demo JS
+        // demoHighCharts.init();
+
+        // Because we are using Admin Panels we use the OnFinish
+        // callback to activate the demoWidgets. It's smoother if
+        // we let the panels be moved and organized before
+        // filling them with content from various plugins
+
+        // Init plugins used on this page
+        // HighCharts, JvectorMap, Admin Panels
+
+        // Init Admin Panels on widgets inside the ".admin-panels" container
+        $('.admin-panels').adminpanel({
+            grid: '.admin-grid',
+            draggable: true,
+            preserveGrid: true,
+            mobile: false,
+            onStart: function() {
+                // Do something before AdminPanels runs
             },
-            hover: {
-              "fill-opacity": 0.3
+            onFinish: function() {
+                $('.admin-panels').addClass('animated fadeIn').removeClass('fade-onload');
+
+                // Init the rest of the plugins now that the panels
+                // have had a chance to be moved and organized.
+                // It's less taxing to organize empty panels
+                demoHighCharts.init();
+                runVectorMaps(); // function below
+            },
+            onSave: function() {
+                $(window).trigger('resize');
             }
-          },
-          markers: [{
-            latLng: [37.78, -122.41],
-            name: 'San Francisco,CA'
-          }, {
-            latLng: [36.73, -103.98],
-            name: 'Texas,TX'
-          }, {
-            latLng: [38.62, -90.19],
-            name: 'St. Louis,MO'
-          }, {
-            latLng: [40.67, -73.94],
-            name: 'New York City,NY'
-          }],
-          markerStyle: {
-            initial: {
-              fill: '#a288d5',
-              stroke: '#b49ae0',
-              "fill-opacity": 1,
-              "stroke-width": 10,
-              "stroke-opacity": 0.3,
-              r: 3
-            },
-            hover: {
-              stroke: 'black',
-              "stroke-width": 2
-            },
-            selected: {
-              fill: 'blue'
-            },
-            selectedHover: {}
-          },
         });
-        // Manual code to alter the Vector map plugin to 
-        // allow for individual coloring of countries
-        var states = ['US-CA', 'US-TX', 'US-MO',
-          'US-NY'
-        ];
-        var colors = [bgWarningLr, bgPrimaryLr, bgInfoLr, bgAlertLr];
-        var colors2 = [bgWarning, bgPrimary, bgInfo, bgAlert];
-        $.each(states, function(i, e) {
-          $("#WidgetMap path[data-code=" + e + "]").css({
-            fill: colors[i]
-          });
-        });
-        $('#WidgetMap').find('.jvectormap-marker')
-          .each(function(i, e) {
-            $(e).css({
-              fill: colors2[i],
-              stroke: colors2[i]
-            });
-          });
-      }
-
-      if ($('#WidgetMap').length) {
-        runJvectorMap();
-      }
-    }
 
 
 
-  });
-  </script>
+    });
+    </script>
 
-  <!-- END: PAGE SCRIPTS -->
+    <!-- END: PAGE SCRIPTS -->
 
 </body>
+
+<!--- Modal --->
+
 
 </html>
