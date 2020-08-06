@@ -1,4 +1,4 @@
-<div class="admin-form section2">
+<div class="admin-form section2 hidden">
 
     <div class="panel heading-border">
         <div class="panel-body">
@@ -9,7 +9,9 @@
             <hr>
             <!-- .section-divider -->
 
-            
+            <div class="panel bg-primary">
+            <h2 class="text-center">Data Pekerjaan</h2>
+            </div>
 
             <div class="panel">
                 <div class="panel-body bg-light">
@@ -142,11 +144,3 @@
 
 
 
-    <div class="section">
-
-        <div class="section mb15">
-
-
-        </div>
-
-    </div>

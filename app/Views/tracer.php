@@ -115,13 +115,20 @@
                     </div>
                 </div>
 
-                
-                    
-                    <?=$this->include('section1')?>
-                    
-                    <?=$this->include('section2')?>
-                  
-                
+                <div><?=$this->include('section1')?></div>
+                <div><?=$this->include('section2')?></div>
+                <div><?=$this->include('section3')?></div>
+
+
+
+
+
+
+
+
+
+
+
 
 
     </div>
@@ -172,11 +179,13 @@
         if ($section == 2) {
             $(".admin-form.section2").removeClass("hidden");
             $(".admin-form.section2").addClass("animated fadeIn");
-            $(".admin-form.section1").addClass("hidden")
-        } else if ($section == 3) {
+            $(".admin-form.section1").addClass("hidden");
+        }
+
+        if ($section == 3) {
             $(".admin-form.section3").removeClass("hidden");
             $(".admin-form.section3").addClass("animated fadeIn");
-            $(".admin-form.section2").addClass("hidden")
+            $(".admin-form.section2").addClass("hidden");
         }
     });
 
@@ -186,11 +195,11 @@
         if ($section == 2) {
             $(".admin-form.section2").removeClass("hidden");
             $(".admin-form.section2").addClass("animated fadeIn");
-            $(".admin-form.section3").addClass("hidden")
+            $(".admin-form.section3").addClass("hidden");
         } else if ($section == 1) {
             $(".admin-form.section1").removeClass("hidden");
             $(".admin-form.section1").addClass("animated fadeIn");
-            $(".admin-form.section2").addClass("hidden")
+            $(".admin-form.section2").addClass("hidden");
         }
     });
 
