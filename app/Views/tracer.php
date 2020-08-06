@@ -115,8 +115,14 @@
                     </div>
                 </div>
 
-                <?=$this->include('section1')?>
-                <?=$this->include('section2')?>
+                
+                    
+                    <?=$this->include('section1')?>
+                    
+                    <?=$this->include('section2')?>
+                  
+                
+
 
     </div>
 
@@ -162,7 +168,7 @@
     $(".next").click(function() {
         // alert("move next section");
         $section++;
-        alert("Masuk section "+$section)
+        alert("Masuk section " + $section)
         if ($section == 2) {
             $(".admin-form.section2").removeClass("hidden");
             $(".admin-form.section2").addClass("animated fadeIn");
@@ -176,7 +182,7 @@
 
     $(".prev").click(function() {
         $section--;
-        alert("Masuk section "+$section)
+        alert("Masuk section " + $section)
         if ($section == 2) {
             $(".admin-form.section2").removeClass("hidden");
             $(".admin-form.section2").addClass("animated fadeIn");
@@ -193,6 +199,21 @@
     jQuery(document).ready(function() {
 
         "use strict";
+
+        $(".pilihan").css("margin", "15px");
+        $(".lain").css("margin", "15px");
+
+        $('input[type=radio][name=jenisBidang]').change(function() {
+            if (this.value == 'ganti') {
+                $(".lain").removeAttr("disabled");
+            } else {
+                $(".lain").attr("disabled", "disabled");
+            }
+        });
+
+        $(".formulir").submit(function() {
+            return false;
+        });
 
         // Init Theme Core
         Core.init();

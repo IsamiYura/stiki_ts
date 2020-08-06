@@ -34,12 +34,13 @@
                     </div>
                 </div>
             </div>
-
+            <!-- start navigation-->
             <div class=pull-right>
                 <div class="text-center col-md-12">
                     <button class="btn btn-success btn-block next">Next</button>
                 </div>
             </div>
+            <!-- end navigation-->
 
         </div>
 
