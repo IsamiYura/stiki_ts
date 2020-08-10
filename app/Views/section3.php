@@ -1,4 +1,4 @@
-<div class="admin-form section3 hidden">
+<div class="admin-form section3">
 
     <div class="panel heading-border">
         <div class="panel-body">
@@ -10,43 +10,31 @@
             <!-- .section-divider -->
 
             <div class="panel bg-primary">
-            <h2 class="text-center">Data Riwayat Pendidikan</h2>
+                <h2 class="text-center">Data Riwayat Pendidikan</h2>
             </div>
 
-            <div class="panel hidden">
-
+            <div class="panel">
                 <div class="panel-body bg-light">
-                    <h4>3. Kapan anda mulai bekerja di tempat tersebut?</h4>
-
-
                     <div class="row">
-                        <div class="option-group field">
-                            <div class="pilihan col-md-6">
-                                <label class="option">
-                                    <input type="radio" name="durasiTunggu" value="1-">
-                                    <span class="radio"></span>0 (sebelum wisuda) - 1 bulan setelah
-                                    wisuda</label>
-                            </div>
+                        <div class="section">
+                            <h4>Apakah bidang kerja anda saat ini sudah sesuai dengan program studi yang anda ambil di
+                                STIKI Malang?</h4>
+                            <hr>
+                            <div class="form-row">
 
-                            <div class="pilihan col-md-6">
-                                <label class="option">
-                                    <input type="radio" name="durasiTunggu" value="4-6">
-                                    <span class="radio"></span>4 sampai 6 bulan setelah wisuda
-                                </label>
+                                <div class="row">
+                                    <div class="text-center col-md-6">
+                                        <button class="btn btn-primary btn-block confirm" id="Sudah Bekerja"
+                                            name="kesesuaianKerja" value="sesuai">Sesuai</button>
+                                    </div>
+                                    <div class="text-center col-md-6">
+                                        <button class="btn btn-warning btn-block confirm" id="Belum Bekerja"
+                                            name="kesesuaianKerja" value="tidakSesuai">Tidak Sesuai</button>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="pilihan col-md-6">
-                                <label class="option">
-                                    <input type="radio" name="durasiTunggu" value="6+">
-                                    <span class="radio"></span>lebih dari 6 bulan setelah wisuda
-                                </label>
-                            </div>
-
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
 
@@ -117,12 +105,21 @@
                 </div>
             </div>
 
+                <div class="col-md-9 pull-right">
+                    <div class="pull-right">
+                        <div class="align-center text-center col-md-6 float-left" style="margin-left:auto;">
+                            <button class="btn btn-success btn-block prev">Prev.</button>
+                        </div>
 
-            <div class=pull-right>
-                <div class="text-center col-md-12">
-                    <button class="btn btn-success btn-block prev">Prev.</button>
+                        <div class="text-center col-md-6">
+                            <button class="btn btn btn-primary simpan" data-toggle="modal" data-target="#myModal">
+                            <i class="glyphicon glyphicon-floppy-save" style="color:white;"></i>
+                            <h4>Simpan</h4>
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
         </div>
 
 

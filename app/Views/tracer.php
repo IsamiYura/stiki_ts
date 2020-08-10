@@ -114,11 +114,11 @@
                         </div>
                     </div>
                 </div>
-
-                <div><?=$this->include('section1')?></div>
-                <div><?=$this->include('section2')?></div>
-                <div><?=$this->include('section3')?></div>
-
+                <form class="formulir">
+                    <div><?=$this->include('section1')?></div>
+                    <div><?=$this->include('section2')?></div>
+                    <div><?=$this->include('section3')?></div>
+                </form>
 
 
 
@@ -167,15 +167,9 @@
     <script type="text/javascript">
     $section = 1;
 
-    $(".confirm").click(function() {
-        alert(this.id);
-        alert($section);
-    });
-
     $(".next").click(function() {
         // alert("move next section");
         $section++;
-        alert("Masuk section " + $section)
         if ($section == 2) {
             $(".admin-form.section2").removeClass("hidden");
             $(".admin-form.section2").addClass("animated fadeIn");
@@ -191,7 +185,6 @@
 
     $(".prev").click(function() {
         $section--;
-        alert("Masuk section " + $section)
         if ($section == 2) {
             $(".admin-form.section2").removeClass("hidden");
             $(".admin-form.section2").addClass("animated fadeIn");
@@ -222,6 +215,11 @@
 
         $(".formulir").submit(function() {
             return false;
+        });
+
+        $("button").click(function() {
+            var fired_button = $(this).val();
+            alert(fired_button);
         });
 
         // Init Theme Core
@@ -270,10 +268,12 @@
     </script>
 
     <!-- END: PAGE SCRIPTS -->
+    <!--- Modal --->
+    <div><?=$this->include('confirm_modal')?></div>
+
 
 </body>
 
-<!--- Modal --->
 
 
 </html>

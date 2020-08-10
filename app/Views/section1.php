@@ -21,11 +21,11 @@
                                     <div class="row">
                                         <div class="text-center col-md-6">
                                             <button class="btn btn-primary btn-block confirm"
-                                                id="Sudah Bekerja">Sudah</button>
+                                                value="Sudah Bekerja">Sudah</button>
                                         </div>
                                         <div class="text-center col-md-6">
                                             <button class="btn btn-warning btn-block confirm"
-                                                id="Belum Bekerja">Belum</button>
+                                                value="Belum Bekerja">Belum</button>
                                         </div>
                                     </div>
                                 </div>

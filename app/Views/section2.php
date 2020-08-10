@@ -1,4 +1,4 @@
-<div class="admin-form section2 hidden">
+<div class="admin-form section2">
 
     <div class="panel heading-border">
         <div class="panel-body">
@@ -10,7 +10,7 @@
             <!-- .section-divider -->
 
             <div class="panel bg-primary">
-            <h2 class="text-center">Data Pekerjaan</h2>
+                <h2 class="text-center">Data Pekerjaan</h2>
             </div>
 
             <div class="panel">
@@ -109,12 +109,18 @@
                             </label>
 
                             <label class="option">
-                                <input type="radio" name="jenisBidang" value="ganti">
-                                <span class="radio"></span>Bidang Lain
-                                <form>
-                                    <input id="something" type="text" class="gui-input lain"
-                                        placeholder="Isi bidang lain disini" disabled>
-                                </form>
+
+                                <div class="col-12">
+                                    <label class="option">
+                                        <input type="radio" name="jenisBidang" value="ganti">
+                                        <span class="radio">asdasdadsa
+                                            
+                                        </span>Bidang Lain</label>
+
+                                </div>
+
+
+
 
                             </label>
 
@@ -141,6 +147,3 @@
 
 
     </div>
-
-
-
