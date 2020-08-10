@@ -1,4 +1,4 @@
-<div class="admin-form section3">
+<div class="admin-form section3 hidden">
 
     <div class="panel heading-border">
         <div class="panel-body">

@@ -8,7 +8,24 @@
                 <h4 class="modal-title">Konfirmasi Data Study Tracer</h4>
             </div>
             <div class="modal-body">
-                <p>Some text in the modal.</p>
+                <form style="text-align:left;">
+                    <p>Status Pekerjaan
+                        <input class="form-control statusKerja" readonly></input>
+                    </p>
+                    <br>
+                    <p>Nama Perusahaan
+                        <input class="form-control namaPerusahaan" readonly></input>
+                    </p>
+                    <br>
+                    <p>Durasi Tunggu Pekerjaan
+                        <input class="form-control durasiTunggu" readonly></input>
+                    </p>
+                    <br>
+                    <p>Durasi Tunggu Pekerjaan
+                        <input class="form-control durasiTunggu" readonly></input>
+                    </p>
+
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

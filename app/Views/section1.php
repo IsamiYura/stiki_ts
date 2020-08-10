@@ -14,18 +14,18 @@
                     <div class="row">
                         <div>
                             <div class="section">
-                                <h4>1. Apakah anda sudah bekerja saat ini?</h4>
+                                <h4>Apakah anda sudah bekerja saat ini?</h4>
                                 <hr>
                                 <div class="form-row">
 
                                     <div class="row">
-                                        <div class="text-center col-md-6">
-                                            <button class="btn btn-primary btn-block confirm"
+                                        <div class="text-center col-md-6 sudah">
+                                            <button class="btn btn-primary btn-block confirm sudah"
                                                 value="Sudah Bekerja">Sudah</button>
                                         </div>
-                                        <div class="text-center col-md-6">
-                                            <button class="btn btn-warning btn-block confirm"
-                                                value="Belum Bekerja">Belum</button>
+                                        <div class="text-center col-md-6 belum">
+                                            <button class="btn btn-warning btn-block confirm belum"
+                                                value="Belum Bekerja" name="Belum">Belum</button>
                                         </div>
                                     </div>
                                 </div>
@@ -35,10 +35,21 @@
                 </div>
             </div>
             <!-- start navigation-->
-            <div class=pull-right>
-                <div class="text-center col-md-12">
-                    <button class="btn btn-success btn-block next">Next</button>
+            <div class="pull-right col-md-9">
+
+                <div class="pull-right pindah hidden">
+                    <div class="text-center col-md-6">
+                        <button class="btn btn-primary reset">
+                            <i class="glyphicon glyphicon-floppy-save" style="color:white;"></i>
+                            Reset
+                        </button>
+
+                    </div>
+                    <div class="text-center col-md-6">
+                        <button class="btn btn-success btn-block next">Next</button>
+                    </div>
                 </div>
+
             </div>
             <!-- end navigation-->
 

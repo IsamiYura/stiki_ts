@@ -166,21 +166,62 @@
 
     <script type="text/javascript">
     $section = 1;
+    var emptyNamaInstansi;
+    var emptyDurasiTunggu;
+
+    var statusPekerjaan;
+    var durasiTunggu;
+    var namaPerusahaan;
 
     $(".next").click(function() {
         // alert("move next section");
         $section++;
+
+        //ke section 2
         if ($section == 2) {
             $(".admin-form.section2").removeClass("hidden");
             $(".admin-form.section2").addClass("animated fadeIn");
             $(".admin-form.section1").addClass("hidden");
         }
 
+        //ke section 3
+        //pastikan semua input harus terisi sebelum pindah section
         if ($section == 3) {
-            $(".admin-form.section3").removeClass("hidden");
-            $(".admin-form.section3").addClass("animated fadeIn");
-            $(".admin-form.section2").addClass("hidden");
+
+            //validasi nama perusahaan
+            if ($('input[name="namaInstansi"]').val() === "") {
+                alert("Nama Instansi masih kosong");
+                emptyNamaInstansi = true;
+            } else {
+                emptyNamaInstansi = false;
+            }
+
+            //validasi durasi tunggu
+            $('input[name="durasiTunggu"]').each(function() {
+                if ($('input[name="durasiTunggu"]:checked').length == 0) {
+                    emptyDurasiTunggu = true;
+                } else {
+                    emptyDurasiTunggu = false;
+                }
+            });
+
+            if (emptyDurasiTunggu == true) {
+                alert("Pilih salah satu durasi tunggu!")
+            }
+
+            //pindah section apabila isian di section2 telah terisi
+            if (emptyNamaInstansi == true || emptyDurasiTunggu == true) {
+                $section--;
+            } else if (emptyNamaInstansi == false && emptyDurasiTunggu == false) {
+                durasiTunggu = $('input[name="durasiTunggu"]').val();
+                namaPerusahaan = $('input[name="namaInstansi"]').val();
+                $(".admin-form.section3").removeClass("hidden");
+                $(".admin-form.section3").addClass("animated fadeIn");
+                $(".admin-form.section2").addClass("hidden");
+            }
+
         }
+
     });
 
     $(".prev").click(function() {
@@ -190,6 +231,7 @@
             $(".admin-form.section2").addClass("animated fadeIn");
             $(".admin-form.section3").addClass("hidden");
         } else if ($section == 1) {
+
             $(".admin-form.section1").removeClass("hidden");
             $(".admin-form.section1").addClass("animated fadeIn");
             $(".admin-form.section2").addClass("hidden");
@@ -205,6 +247,8 @@
         $(".pilihan").css("margin", "15px");
         $(".lain").css("margin", "15px");
 
+
+
         $('input[type=radio][name=jenisBidang]').change(function() {
             if (this.value == 'ganti') {
                 $(".lain").removeAttr("disabled");
@@ -213,13 +257,44 @@
             }
         });
 
+
         $(".formulir").submit(function() {
             return false;
         });
 
-        $("button").click(function() {
-            var fired_button = $(this).val();
-            alert(fired_button);
+        $(".confirm").click(function() {
+            statusPekerjaan = $(this).val();
+            if (statusPekerjaan == "Belum Bekerja") {
+                $(".sudah").css("opacity", "0");
+                $(".sudah").attr("disabled", "disabled");
+            } else if (statusPekerjaan == "Sudah Bekerja") {
+                $(".belum").css("opacity", "0");
+                $(".belum").attr("disabled", "disabled");
+            }
+            alert(statusPekerjaan);
+            $(".pull-right .pindah").removeClass("hidden");
+        });
+
+        if (statusPekerjaan == "Sudah Bekerja") {
+            alert("Terisi");
+            $(".pindah").removeClass("hidden");
+        }
+
+        $('#myModal').on('show.bs.modal', function(event) {
+            var modal = $(this);
+            modal.find('.statusKerja').val(statusPekerjaan);
+            modal.find('.namaPerusahaan').val(namaPerusahaan);
+            modal.find('.durasiTunggu').val(durasiTunggu);
+
+        });
+
+        $(".admin-form .reset").click(function() {
+
+            $(".sudah").css("opacity", "1");
+            $(".sudah").removeAttr("disabled", "disabled");
+            $(".belum").css("opacity", "1");
+            $(".belum").removeAttr("disabled", "disabled");
+            $(".pull-right .pindah").addClass("hidden");
         });
 
         // Init Theme Core
