@@ -81,31 +81,31 @@
                         <div class="option-group row">
                             <div class="pilihan col-md-12">
                                 <label class="option col-md-6">
-                                    <input type="radio" name="jenisBidang" value="ti">
+                                    <input type="radio" name="jenisBidang" value="Teknologi Informasi">
                                     <span class="radio"></span>Teknologi Informasi
                                 </label>
 
                                 <label class="option">
-                                    <input type="radio" name="jenisBidang" value="st">
+                                    <input type="radio" name="jenisBidang" value="Wiraswasta / Startup">
                                     <span class="radio"></span>Wiraswasta / Startup
                                 </label>
                             </div>
 
                             <div class="pilihan col-md-12">
                                 <label class="option col-md-6">
-                                    <input type="radio" name="jenisBidang" value="gov">
+                                    <input type="radio" name="jenisBidang" value="Instansi Pemerintah">
                                     <span class="radio"></span>Instansi Pemerintah
                                 </label>
 
                                 <label class="option">
-                                    <input type="radio" name="jenisBidang" value="sws">
+                                    <input type="radio" name="jenisBidang" value="Perusahaan Swasta">
                                     <span class="radio"></span>Perusahaan Swasta
                                 </label>
                             </div>
 
                             <div class="pilihan col-md-12">
                                 <label class="option col-md-6">
-                                    <input type="radio" name="jenisBidang" value="pd">
+                                    <input type="radio" name="jenisBidang" value="Pendidikan dan Pengajaran">
                                     <span class="radio"></span>Pendidikan dan Pengajaran
                                 </label>
 
@@ -116,7 +116,7 @@
                                             <input type="radio" name="jenisBidang" value="ganti">
                                             <span class="radio">
                                                 <p></p>
-                                            </span>Bidang Lain</label><input type="text" name="other_reason"
+                                            </span>Bidang Lain</label><input type="text" name="other"
                                             class="form-control lain" disabled />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
 
                                     </div>

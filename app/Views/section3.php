@@ -24,12 +24,12 @@
 
                                 <div class="row">
                                     <div class="text-center col-md-6">
-                                        <button class="btn btn-primary btn-block confirm" id="Sudah Bekerja"
-                                            name="kesesuaianKerja" value="sesuai">Sesuai</button>
+                                        <button class="btn btn-primary btn-block sesuai iya-sesuai" id="iya" onClick="reply_click(this.id)" name="kesesuaianKerja"
+                                            value="Sesuai">Sesuai</button>
                                     </div>
                                     <div class="text-center col-md-6">
-                                        <button class="btn btn-warning btn-block confirm" id="Belum Bekerja"
-                                            name="kesesuaianKerja" value="tidakSesuai">Tidak Sesuai</button>
+                                        <button class="btn btn-warning btn-block sesuai tidak-sesuai" id="tidak" onClick="reply_click(this.id)" name="kesesuaianKerja"
+                                            value="Tidak Sesuai">Tidak Sesuai</button>
                                     </div>
                                 </div>
                             </div>
@@ -45,40 +45,36 @@
                     <div class="option-group row">
                         <div class="pilihan col-md-12">
                             <label class="option col-md-6">
-                                <input type="radio" name="pendidikanMinimal" value="sma">
+                                <input type="radio" name="pendidikanMinimal" value="SMA Sederajat">
                                 <span class="radio"></span>SMA Sederajat
                             </label>
 
                             <label class="option">
-                                <input type="radio" name="pendidikanMinimal" value="s1">
+                                <input type="radio" name="pendidikanMinimal" value="Strata 1">
                                 <span class="radio"></span>Strata 1
                             </label>
                         </div>
 
                         <div class="pilihan col-md-12">
                             <label class="option col-md-6">
-                                <input type="radio" name="pendidikanMinimal" value="d1">
+                                <input type="radio" name="pendidikanMinimal" value="Diploma 1">
                                 <span class="radio"></span>Diploma 1
                             </label>
 
                             <label class="option">
-                                <input type="radio" name="pendidikanMinimal" value="s2">
+                                <input type="radio" name="pendidikanMinimal" value="Strata 2">
                                 <span class="radio"></span>Strata 2
                             </label>
                         </div>
 
                         <div class="pilihan col-md-12">
                             <label class="option col-md-6">
-                                <input type="radio" name="pendidikanMinimal" value="d3">
+                                <input type="radio" name="pendidikanMinimal" value="Diploma 3">
                                 <span class="radio"></span>Diploma 3
                             </label>
 
                         </div>
                     </div>
-
-
-
-
                 </div>
             </div>
 
@@ -94,8 +90,9 @@
 
 
                                     <label class="field">
-                                        <input type="text" name="from" id="from" class="gui-input"
+                                        <input type="text" name="gajiRata2" class="gui-input gajiRata2"
                                             placeholder="Masukkan rata-rata pendapatan anda">
+                                            </input>
                                     </label>
 
                                 </div>
@@ -105,21 +102,21 @@
                 </div>
             </div>
 
-                <div class="col-md-9 pull-right">
-                    <div class="pull-right">
-                        <div class="align-center text-center col-md-6 float-left" style="margin-left:auto;">
-                            <button class="btn btn-success btn-block prev">Prev.</button>
-                        </div>
-
-                        <div class="text-center col-md-6">
-                            <button class="btn btn btn-primary simpan" data-toggle="modal" data-target="#myModal">
-                            <i class="glyphicon glyphicon-floppy-save" style="color:white;"></i>
-                            <h4>Simpan</h4>
-                            </button>
-                        </div>
+            <div class="col-md-9 pull-right">
+                <div class="pull-right">
+                    <div class="align-center text-center col-md-6 float-left" style="margin-left:auto;">
+                        <button class="btn btn-success btn-block prev">Prev.</button>
                     </div>
 
+                    <div class="text-center col-md-6">
+                        <button class="btn btn btn-primary simpan" data-toggle="modal" data-target="#myModal">
+                            <i class="glyphicon glyphicon-floppy-save" style="color:white;"></i>
+                            <h4>Simpan</h4>
+                        </button>
+                    </div>
                 </div>
+
+            </div>
         </div>
 
 

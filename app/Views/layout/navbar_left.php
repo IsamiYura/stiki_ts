@@ -54,7 +54,7 @@
 
         echo $uri;
         ?>>
-      <a href=<?php echo base_url('user/tracer')?>>
+      <a href=<?php echo base_url('tracer')?>>
         <span class="fa fa-calendar"></span>
         <span class="sidebar-title">Tracer Study</span>
       </a>

@@ -2,7 +2,7 @@
 
 use CodeIgniter\Model;
 
-class User_model extends Model
+class Tracer_model extends Model
 {
     protected $table = 'tbl_laporan_tracer';
 
