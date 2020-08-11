@@ -61,13 +61,20 @@
 
                 <ul class="nav sub-nav">
                     <li>
-                        <a class="accordion-toggle" href=<?php echo base_url('tracer')?>>
+                        <a href=<?php echo base_url('tracer/isi')?>>
                             <span class="sidebar-title">Isi Tracer Study</span>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href=<?php echo base_url('tracer')?> id="tab-admin">
+                            <span class="sidebar-title">Riwayat Tracer Study</span>
                         </a>
                     </li>
 
                     <li>
-                        <a class="accordion-toggle" href=<?php echo base_url('tracer/riwayat')?>>
+                        <a href=<?php echo base_url('tracer')?> id="tab-mhs">
                             <span class="sidebar-title">Riwayat Tracer Study</span>
                         </a>
                     </li>

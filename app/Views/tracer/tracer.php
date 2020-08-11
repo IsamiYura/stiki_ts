@@ -410,7 +410,7 @@
 
     <!-- END: PAGE SCRIPTS -->
     <!--- Modal --->
-    <div><?=$this->include('confirm_modal')?></div>
+    <div><?=$this->include('tracer/confirm_modal')?></div>
 
 
 </body>

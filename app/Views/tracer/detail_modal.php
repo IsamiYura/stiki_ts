@@ -1,4 +1,4 @@
-<div id="myModal" class="modal fade" role="dialog">
+<div id="model" class="modal fade" role="dialog" tabindex="-1">
     <div class="modal-dialog">
 
         <!-- Modal content-->
@@ -9,8 +9,8 @@
             </div>
             <form style="text-align:left;" action=<?php echo base_url("tracer/store")?> method="post">
                 <div class="modal-body">
-                    <p>Status Pekerjaan
-                        <input class="form-control statusKerja" readonly></input>
+                    <p>ID Data Tracer
+                        <input class="form-control idnya" name="id_laporan" value="" readonly></input>
                     </p>
                     <br>
                     <p>Nama Perusahaan
@@ -18,7 +18,7 @@
                     </p>
                     <br>
                     <p>Durasi Tunggu Pekerjaan
-                        <input class="form-control durasiTunggu" readonly></input>
+                        <input class="form-control durasiTunggu" name="durasiTunggu" readonly></input>
                     </p>
                     <br>
                     <p>Jenis/Bidang Perusahaan
@@ -39,7 +39,6 @@
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">Simpan</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Kembali</button>
                 </div>
             </form>
