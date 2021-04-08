@@ -213,8 +213,9 @@
             success: function(data) {
                 // $('#detailModal').modal("show");
                 console.log(data)
-                $('.idnya').val(data.id_laporan);
+                $('.idnya').val(data.nrp);
                 $('.gajiRata2').val(data.gaji_rata2);
+                $('.namaPerusahaan').val(data.instansi_pekerjaan);
                 $('#model').modal('toggle');
             },
             error: function(jqXHR, textStatus, errorThrown) {

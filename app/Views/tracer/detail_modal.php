@@ -9,7 +9,7 @@
             </div>
             <form style="text-align:left;" action=<?php echo base_url("tracer/store")?> method="post">
                 <div class="modal-body">
-                    <p>ID Data Tracer
+                    <p>NRP
                         <input class="form-control idnya" name="id_laporan" value="" readonly></input>
                     </p>
                     <br>

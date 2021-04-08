@@ -123,6 +123,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <form class="formulir">
                     <div><?=$this->include('section1')?></div>
                     <div><?=$this->include('section2')?></div>

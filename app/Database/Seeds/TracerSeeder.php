@@ -19,7 +19,7 @@ class TracerSeeder extends \CodeIgniter\Database\Seeder
             $sekolah = array("SMA Sederajat", "Strata 1", "Strata 2", "Diploma 3", "Diploma 1");
 
             $data = [
-                'nrp' => $nrp[array_rand($nrp)],
+                'nrp' => "MHS".($i+1),
                 'instansi_pekerjaan' => $faker -> company,
                 'jenis_instansi' => $instansi_pekerjaan[array_rand($instansi_pekerjaan)],
                 'tanggal_masuk' => $faker -> date($format = 'Y-m-d', $max = '2020-06-01'),

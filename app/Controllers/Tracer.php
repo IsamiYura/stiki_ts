@@ -11,7 +11,7 @@ class Tracer extends Controller
     {
         helper(['form', 'url']);
         $this->Tracer_model = new Tracer_model();
-        $data['laporan'] = $this->Tracer_model->get_by_nrp('MHS1');
+        $data['laporan'] = $this->Tracer_model->get_all_tracer();
         return view('tracer/riwayat_view', $data);
     }
 
@@ -26,11 +26,7 @@ class Tracer extends Controller
                 'nrp' => $row['nrp'],
                 'gaji_rata2' => $row['gaji_rata2'],
                 'instansi_pekerjaan' => $row['instansi_pekerjaan'],
-                'jenis_instansi' => $row['jenis_instansi'],
-                'tanggal_masuk' => $row['tanggal_masuk'],
-                'kesesuaian_instansi' => $row['kesesuaian_instansi'],
-                'pendidikan_minimal' => $row['pendidikan_minimal'],
-                'gaji_rata2' => $row['gaji_rata2'],
+
             ];
 
             echo json_encode($data);
